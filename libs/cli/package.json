@@ -1,4 +1,11 @@
 {
   "name": "frugal-drive",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "type": "module",
+  "bin": "./src/index.js",
+  "scripts": {
+    "build": "nx run cli:build",
+    "watch": "nx run cli:build --watch",
+    "cli": "node ../../dist/libs/cli/src/index.js"
+  }
 }
